@@ -58,7 +58,6 @@ class GenerateChangelogTask extends DefaultTask {
             def fileOutputStream = new FileOutputStream(changelogFile)
             changelogWriter.writeChangelog(new PrintStream(fileOutputStream))
             fileOutputStream.close()
-            changelogFile.close()
         }
     }
 
